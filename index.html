@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
 </head>
 <body>
-    
+
+   <div class="boards">
+        <div class="board">
+            <h3>Todo</h3>
+            <div class="dropzone">
+                <div class="card" draggable="true">
+                    <div class="status green"></div>
+                    <div class="content">Do frontEnd</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="board">
+            <h3>In Progress</h3>
+            <div class="dropzone">
+                <div class="card" draggable="true">
+                    <div class="status red"></div>
+                    <div class="content">Do backend</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="board">
+            <h3>Done</h3>
+            <div class="dropzone">
+                <div class="card" draggable="true">
+                    <div class="status blue"></div>
+                    <div class="content">Do UML</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
